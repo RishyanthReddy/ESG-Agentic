@@ -21,8 +21,6 @@ The **ESG Intelligence Platform** is a hybrid framework that combines **blockcha
 ## 🏗️ System Architecture
 
 ```mermaid
-## 🏗️ System Architecture  
-```mermaid
 flowchart LR
     A[Data Sources] --> B[Ingestion Layer]
     B --> C[Blockchain Anchoring]
@@ -30,6 +28,7 @@ flowchart LR
     D --> E[AI/LLM Analytics]
     E --> F[Visualization & Dashboards]
     E --> G[API Layer]
+```
 
 ---
 
@@ -43,6 +42,7 @@ esg-intelligence-platform/
 │── datasets/       # Sample ESG datasets
 │── tests/          # Unit & integration tests
 │── docs/           # Architecture & technical documentation
+│── VLEIs.zip       # Core code archive (must be extracted after cloning)
 │── README.md       # Project overview
 ```
 
@@ -80,16 +80,19 @@ esg-intelligence-platform/
 ## 📖 How to Run
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/yourusername/esg-intelligence-platform.git
 cd esg-intelligence-platform
 
-# Setup backend
+# 2. Extract the core project files
+unzip VLEIs.zip -d .
+
+# 3. Setup backend
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 
-# Run frontend dashboard
+# 4. Run frontend dashboard
 cd ../frontend
 streamlit run app.py
 ```
@@ -107,5 +110,3 @@ We welcome contributions from researchers, developers, and sustainability profes
 This project is licensed under the **MIT License** – free to use and adapt with attribution.
 
 ---
-
-👉 Would you like me to make this **README leaner (1-page style for GitHub repo)** or keep it **detailed (like for academic + enterprise audience)**?
