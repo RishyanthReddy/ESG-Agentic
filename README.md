@@ -21,14 +21,15 @@ The **ESG Intelligence Platform** is a hybrid framework that combines **blockcha
 ## 🏗️ System Architecture
 
 ```mermaid
+## 🏗️ System Architecture  
+```mermaid
 flowchart LR
     A[Data Sources] --> B[Ingestion Layer]
     B --> C[Blockchain Anchoring]
-    C --> D[Verification Layer (vLEI + Merkle Proofs)]
+    C --> D[Verification Layer: vLEI + Merkle Proofs]
     D --> E[AI/LLM Analytics]
     E --> F[Visualization & Dashboards]
     E --> G[API Layer]
-```
 
 ---
 
